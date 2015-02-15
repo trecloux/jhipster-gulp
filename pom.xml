@@ -333,6 +333,15 @@
             <version>${metrics-spark-reporter.version}</version>
         </dependency>
     </dependencies>
+    <pluginRepositories>
+        <pluginRepository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>sonatype-oss</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </pluginRepository>
+    </pluginRepositories>
     <build>
         <resources>
             <resource>
@@ -588,7 +597,7 @@
                     <plugin>
                         <groupId>com.github.trecloux</groupId>
                         <artifactId>yeoman-maven-plugin</artifactId>
-                        <version>0.3</version>
+                        <version>0.4-SNAPSHOT</version>
                         <executions>
                             <execution>
                                 <id>run-build-tool</id>
